@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open sans", sans-serif;
+  overflow: hidden;
+  color: rgb(131, 23, 255);
+  background: linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://ca-times.brightspotcdn.com/dims4/default/c2f7a22/2147483647/strip/true/crop/1800x958+0+0/resize/840x447!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F40%2Fbe%2F703394a54e79bf6529336535b854%2Fcoronavirus-orange.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: default;
+}
+
+::selection {
+  background: rgb(131, 23, 255);
+  opacity: 0.75;
+  color: #fff;
+}
+
+.coronavirus {
+  margin: 0 1rem;
+}
+
+.coronavirus,
+.box div {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: 300ms ease;
+  background: #fff;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+}
+
+h1 {
+  padding-bottom: 1rem;
+  opacity: 0.75;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.coronavirus {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.box {
+  font-size: 1.25rem;
+  opacity: 0.6;
+
+  span {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  div {
+    margin: 0.5rem;
+  }
+
+  &:last-child {
+    box {
+      width: 100%;
+    }
+  }
+}
